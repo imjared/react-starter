@@ -1,4 +1,5 @@
 import React from 'react';
+import './style/index.scss';
 
 const App = React.createClass({
 
@@ -6,7 +7,9 @@ const App = React.createClass({
 
     render() {
         return (
-            <h2>Hello world</h2>
+            <div className="container-fluid">
+                <h2>Hello my friends</h2>
+            </div>
         );
     }
 
