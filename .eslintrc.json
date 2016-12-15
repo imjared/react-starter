@@ -154,25 +154,6 @@
         "max-len": [0, 120],
         "max-params": 0,
         "max-statements": 0,
-        "no-plusplus": 0,
-        // React
-        "jsx-quotes": [2, "prefer-double"],
-        "react/display-name": 0,
-        "react/jsx-boolean-value": 2,
-        "react/jsx-no-duplicate-props": 2,
-        "react/jsx-no-undef": 2,
-        "react/jsx-sort-prop-types": 0,
-        "react/jsx-sort-props": 0,
-        "react/jsx-uses-react": 2,
-        "react/jsx-uses-vars": 2,
-        "react/no-did-mount-set-state": 0,
-        "react/no-did-update-set-state": 2,
-        "react/no-multi-comp": 0,
-        "react/no-unknown-property": 2,
-        "react/prop-types": 0,
-        "react/react-in-jsx-scope": 0,
-        "react/self-closing-comp": 2,
-        "react/sort-comp": 0,
-        "react/wrap-multilines": 0
+        "no-plusplus": 0
     }
 }
