@@ -18,4 +18,4 @@
 
 ## deploying
 
-- ensure `NODE_ENV="production"` and run `$ npm run deploy`. generated hashed assets will be in `/dist`
+- ensure `NODE_ENV="production"` in `.env` and run `$ npm run deploy`. generated hashed assets will be in `/dist`
