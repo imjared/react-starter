@@ -1,7 +1,15 @@
-# react-starter
+## getting started
 
-my starter kit until something new comes out
-
+1. `git clone git@github.com:imjared/react-starter.git <your-project-name> && cd <your-project-name>`
 1. `yarn` or `npm i`
-2. `npm start` and go to [http://localhost:3000](http://localhost:3000)
-3. edit `src/containers/App.js`
+1. `npm start` and go to [http://localhost:3000](http://localhost:3000)
+1. edit `src/containers/App.js`
+
+## includes
+
+- react v15
+- hot reloading of components
+- autoprefixing with [post-css](https://github.com/postcss/postcss-loader)
+- SCSS injection
+- basic redux scaffolding. Uses the ["duck"](https://github.com/erikras/ducks-modular-redux/issues) pattern.
+- pretty opinionated .eslintrc and .editorconfig
