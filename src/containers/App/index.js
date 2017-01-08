@@ -4,15 +4,15 @@ import './index.scss';
 
 const App = React.createClass({
 
-    displayName: 'App',
+  displayName: 'App',
 
-    render() {
-        return (
-            <div className="container-fluid" id="app">
-                <marquee><h2>hello world</h2></marquee>
-            </div>
-        );
-    }
+  render() {
+    return (
+      <div className="container-fluid" id="app">
+        <marquee><h2>hello world</h2></marquee>
+      </div>
+    );
+  }
 
 });
 
