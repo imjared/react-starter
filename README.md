@@ -1,10 +1,9 @@
 ## getting started
 
-1. `$ git clone git@github.com:imjared/react-starter.git <your-project-name> && cd <your-project-name>`
-1. `$ yarn` or `$ npm i`
-1. `$ cp .env.sample .env && rm .env.sample`
-1. `$ npm start` and go to [http://localhost:3000](http://localhost:3000)
-1. edit `src/containers/App.js`
+1. Clone this repo: `$ git clone git@github.com:imjared/react-starter.git <your-project-name> && cd <your-project-name>`
+1. Install dependencies with Yarn or npm: `$ yarn` or `$ npm i`
+1. Create a working .env with the provided sample: `$ cp .env.sample .env && rm .env.sample`
+1. Start the app: `$ npm start` and go to [http://localhost:3000](http://localhost:3000)
 
 ## includes
 
