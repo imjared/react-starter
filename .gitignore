@@ -34,4 +34,7 @@ jspm_packages
 .node_repl_history
 
 # local
+/.happypack
+/dist
 *.sublime-project
+.env
