@@ -9,7 +9,7 @@ const App = React.createClass({
   render() {
     return (
       <div className="container-fluid" id="app">
-        <marquee><h2>hello world</h2></marquee>
+        <marquee><h2>😊 change App/index.js to get started 😊</h2></marquee>
       </div>
     );
   }
