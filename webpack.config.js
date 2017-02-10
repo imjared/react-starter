@@ -21,6 +21,8 @@ config.output = {
   filename: 'bundle.js'
 };
 
+config.output.publicPath = '/';
+
 config.plugins = [
   new HtmlWebpackPlugin({
     hash: true,
@@ -28,6 +30,11 @@ config.plugins = [
     title: 'react-starter'
   })
 ];
+
+// Save us from having to use relative paths to asset dir
+config.resolve = {
+  root: path.join( __dirname, 'assets' )
+};
 
 /*================
  * Shared config
@@ -38,8 +45,6 @@ if ( process.env.NODE_ENV === 'production' ) {
   /*================
    * Production
    ================*/
-
-  config.output.publicPath = '/';
   
   // or devtool: 'eval' to debug issues with compiled output
   config.devtool = 'source-map';
@@ -90,7 +95,7 @@ if ( process.env.NODE_ENV === 'production' ) {
   config.module = {
     loaders: [{
       test: /\.scss$/,
-      loaders: ['style', 'css', 'postcss', 'sass']
+      loaders: ['style-loader', 'css-loader', 'postcss-loader', 'resolve-url-loader', 'sass-loader?sourceMap']
     }, {
       test: /\.js?$/,
       loaders: [
@@ -100,6 +105,12 @@ if ( process.env.NODE_ENV === 'production' ) {
     }, {
       test: /\.css$/,
       loader: 'style-loader!css-loader'
+    }, {
+      test: /\.(jpg|png)$/,
+      loader: 'file-loader',
+      options: {
+        name: '[path][name].[hash].[ext]'
+      }
     }]
   };
   
