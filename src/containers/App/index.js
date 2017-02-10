@@ -1,19 +1,15 @@
-import React from 'react';
+import React, { Component } from 'react';
 
 import './index.scss';
 
-const App = React.createClass({
-
-  displayName: 'App',
+export default class App extends Component {
 
   render() {
     return (
-      <div className="container-fluid" id="app">
-        <marquee><h2>😊 change App/index.js to get started 😊</h2></marquee>
+      <div id="app">
+        {this.props.children}
       </div>
     );
   }
 
-});
-
-module.exports = App;
+}

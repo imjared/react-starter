@@ -1,14 +1,5 @@
-import React from 'react';
 import { render } from 'react-dom';
-import { Provider } from 'react-redux';
 
-import App from './Containers/App/';
-import configureStore from './redux';
+import Navigation from './navigation/index.js';
 
-const store = configureStore();
-
-render(
-  <Provider store={ store }>
-    <App />
-  </Provider>, document.getElementById('root')
-);
+render( Navigation, document.getElementById('root') );
